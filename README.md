@@ -2,16 +2,17 @@
 
 本操作可能会导致你的手机无法正常运作，请谨慎操作，如果遇到特殊情况导致分区错乱，线刷官方rom即可恢复分区
 
-#1.下载parted工具
-#2.进入recovery模式
+1.下载parted工具
 
-1) 复制parted命令到/tmp，并给予执行权限
+2.进入recovery模式
+
+复制parted命令到/tmp，并给予执行权限
 
 cp /sdcard/parted /tmp/parted
 
 chmod 0755 /tmp/parted
 
-#3.对sda磁盘进行分区
+3.对sda磁盘进行分区
 
 命令：/tmp/parted /dev/block/sda
 
@@ -36,7 +37,7 @@ Yes/No? y
 Warning: The resulting partition is not properly aligned for best performance.
 Ignore/Cancel? I
 
-#4.格式化userdata分区、vendor分区
+4.格式化userdata分区、vendor分区
 
 命令：
 
